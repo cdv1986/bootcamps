@@ -1,5 +1,4 @@
-# DXXR
-Devops test -
+## Devops test -
 ## Author :
 Christian Daniel Valls 
 ### contact
@@ -86,10 +85,6 @@ rke up -config  /home/azureuser/scripts/cluster.yml
 
 #### TO CREATE THE CLUSTER WITH RKE
 sudo  rke up -config  /home/azureuser/scripts/cluster.yml
-
-
-
-
 
 
 
