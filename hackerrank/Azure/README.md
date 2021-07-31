@@ -1,15 +1,14 @@
 # Amsterdam
 Devops test -
 ## Author :
-Christian Daniel Valls 
+Christian Daniel Valls
 ### contact
 cdv1986@gmail.com    
 https://www.linkedin.com/in/christianvalls/
 
 
 # Actual Scenario:
-![Alt text](IMAGES/actualScenario01.jpg.JPG?raw=true "actualScenario")
-actualScenario01.jpg
+![Alt text](IMAGES/actualScenario01.jpg?raw=true "actualScenario")
 
 # Phase 1:
 
@@ -41,14 +40,14 @@ HOSTNAME:(MASTER01)
 HOSTNAME:(MASTER02)
 ![Alt text](IMAGES/hyperv_1_master01_IFCONFIG2.JPG?raw=true "master02")
 
-##### Run on server for prepare pre install 
+##### Run on server for prepare pre install
 [root@localhost scripts]# chmod a+x prepare.sh
 [root@localhost scripts]# sh prepare.sh
 
 #### WORKER01
  WORKER (address_prefixes=["10.0.1.0/24"])
  Hostname:(WORKER01)
-##### Run on server for prepare pre install 
+##### Run on server for prepare pre install
 [root@localhost scripts]# chmod a+x prepare.sh
 [root@localhost scripts]# sh prepare.sh
 
@@ -63,11 +62,11 @@ PODS:
 - NGINX REVERSE PROXY TO REDIRECT ALL TO HTTPS -----> INTERNAL SUBNET TO 443 OAUTH PROXY
 - OAUTH2-PROXY ------->TOKEN WELL WORKING -> WEB SERVER INTERNAL SUBNET
 - WEB SERVER RUNING ON HTTPS ON INTERNAL SUBNET
-- DATABASE 
-- STORAGE AS SERVICE FOR THE FILE SERVER AMAZON S3 OR AZURE BLOB SOTRAGE SERVICE 
+- DATABASE
+- STORAGE AS SERVICE FOR THE FILE SERVER AMAZON S3 OR AZURE BLOB SOTRAGE SERVICE
 
 # Phase 2:
-USE THIS TOPOLOGY WITH MULTIPLE ZONES ON MULTI CLOUD PROVIDERS AND DNS BALANCERS ZONES AND HA MANAGEMENT AND AUTO SCALING 
+USE THIS TOPOLOGY WITH MULTIPLE ZONES ON MULTI CLOUD PROVIDERS AND DNS BALANCERS ZONES AND HA MANAGEMENT AND AUTO SCALING
 ### BEST WAY DIAGRAM PROD:
 External etcd topology
 https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/ha-topology/
@@ -81,7 +80,7 @@ https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/ha-topolog
 - MAKE SECURE CONNECTIONS
 - HAVE REVESE PROXYS
 - USE INFRASTRUCTURE AS SERVICE
-- BE ALWAYS UPDATED. 
+- BE ALWAYS UPDATED.
 -NEVER USE AN EXPOSED WEB SERVER WITH DATABASE, FILE SERVER AND WEBSERVER ROLES IN THE SAME BARE METAL MACHINNE.
 
 
@@ -92,7 +91,7 @@ https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/ha-topolog
 
 
 ## Author :
-Christian Daniel Valls 
+Christian Daniel Valls
 ### contact
 cdv1986@gmail.com    
 https://www.linkedin.com/in/christianvalls/
